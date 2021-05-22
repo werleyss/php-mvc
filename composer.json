@@ -1,0 +1,18 @@
+{
+    "name": "werleyss/php-mvc",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Werleyss",
+            "email": "werley_desouzasilva@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "SON\\": "src",
+            "App\\": "app"
+        }
+    }
+}
