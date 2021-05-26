@@ -3,14 +3,20 @@
 
 namespace App\Controllers;
 
-
 use SON\Controller;
+use App\Models\User;
 
 class UsersController extends Controller
 {
+    public function __construct(User $model)
+    {
+        $this->model = $model;
+    }
+
     public function index()
     {
-        return 'Página inicial de usuários';
+        $user = $this->model->get();
+        $this->render($user);
     }
 
     public function create()
