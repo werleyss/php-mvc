@@ -12,4 +12,10 @@ $router['/registro'] = [
     'action' => 'create'
 ];
 
+$router['/products'] = [
+    'class' => App\Controllers\ProductsController::class,
+    'action' => 'index'
+];
+
+
 return $router;
